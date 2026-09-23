@@ -1,0 +1,7 @@
+<div class="container">
+    <h1>Todo List 完了済</h1>
+    <% @todos.each do |todo| %>
+        <p><%= todo.title %></p>
+        <%= link_to '詳細', todo_path(todo) %>
+    <% end %>
+</div>

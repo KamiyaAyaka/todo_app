@@ -1,0 +1,5 @@
+<h2>タスク</h2>
+<p><%= @todo.title %></p>
+<%= link_to '編集する', edit_todo_path(@todo.id)%><br>
+<%= link_to '削除する', todo_path(@todo.id), data: { turbo_method: :delete, turbo_confirm: "本当に消しますか？"} %><br>
+<%= link_to 'タスク一覧ページへ', todos_path %>
