@@ -4,4 +4,6 @@ Rails.application.routes.draw do
       get :completed
     end
   end
+
+  root "todos#index"
 end
